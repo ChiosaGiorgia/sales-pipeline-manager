@@ -58,12 +58,24 @@ class CLI:
 
 
 def create_parser():
-    """Create argument parser"""
+    """
+    Create argument parser
+
+    P.I.P.E. Sales Process Stages:
+    1. initial_inquiry - Customer requests information/quotation
+    2. qualification - Technical feasibility evaluation
+    3. proposal_development - Customized solution design
+    4. negotiation - Pricing and technical details finalization
+    5. order_confirmation - Contract signed, production scheduled
+    6. delivery - Installation, commissioning, training
+    """
     parser = argparse.ArgumentParser(
-        description="Sales Pipeline Manager - P.I.P.E. Industrial Systems"
+        description="Sales Pipeline Manager - P.I.P.E. Industrial Systems",
+        epilog="Track your sales funnel: Lead → Opportunity → Quote → Order"
     )
 
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
+
 
     # Add lead command
     add_parser = subparsers.add_parser('add-lead', help='Add a new lead')
