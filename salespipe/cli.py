@@ -37,10 +37,11 @@ class CLI:
             print("No leads found.")
             return
 
-        print(f"\n{'ID':<5} {'Name':<20} {'Email':<30} {'Status':<15} {'Industry':<15}")
-        print("-" * 90)
+        print(f"\n{'ID':<5} {'Name':<20} {'Email':<30} {'Status':<15} {'Industry':<20} {'Location':<15}")
+        print("-" * 110)
         for lead in leads:
-            print(f"{lead[0]:<5} {lead[1]:<20} {lead[2]:<30} {lead[5]:<15} {lead[7] or 'N/A':<15}")
+            print(
+                f"{lead[0]:<5} {lead[1]:<20} {lead[2]:<30} {lead[5]:<15} {lead[7] or 'N/A':<20} {lead[6] or 'N/A':<15}")
         print(f"\nTotal: {len(leads)} leads")
 
     def export_leads(self, args):
@@ -59,7 +60,7 @@ class CLI:
 def create_parser():
     """Create argument parser"""
     parser = argparse.ArgumentParser(
-        description="Sales Pipeline Manager - Manage your sales leads and opportunities"
+        description="Sales Pipeline Manager - P.I.P.E. Industrial Systems"
     )
 
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
@@ -70,8 +71,9 @@ def create_parser():
     add_parser.add_argument('--email', required=True, help='Lead email')
     add_parser.add_argument('--phone', default='', help='Lead phone')
     add_parser.add_argument('--source', default='manual', help='Lead source')
-    add_parser.add_argument('--location', default=None, help='Lead location (city, country)')
-    add_parser.add_argument('--industry', default=None, help='Lead industry (tech, finance, etc.)')
+    add_parser.add_argument('--location', default=None, help='Location (Germany, Italy, France, Benelux)')
+    add_parser.add_argument('--industry', default=None,
+                            help='Industry (automotive, industrial_components, food_beverage, logistics)')
     add_parser.add_argument('--company-size', default=None, help='Company size (small, medium, large)')
 
     # List leads command
