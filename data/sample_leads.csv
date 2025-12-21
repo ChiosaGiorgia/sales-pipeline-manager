@@ -1,0 +1,4 @@
+name,email,phone,source,status
+Alice Johnson,alice@example.com,555-0101,website,new
+Bob Smith,bob@example.com,555-0102,referral,contacted
+Carol White,carol@example.com,555-0103,linkedin,qualified
