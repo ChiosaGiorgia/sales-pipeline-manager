@@ -18,13 +18,14 @@ class CSVHandler:
 
         with open(filename, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=[
-                'lead_id', 'name', 'email', 'phone', 'source', 'status', 'created_at'
+                'lead_id', 'name', 'email', 'phone', 'source', 'status',
+                'location', 'industry', 'company_size', 'created_at'
             ])
             writer.writeheader()
 
             for lead in leads:
                 if isinstance(lead, tuple):
-                    # From database query
+                    # From database query (now has 10 fields)
                     writer.writerow({
                         'lead_id': lead[0],
                         'name': lead[1],
@@ -32,7 +33,10 @@ class CSVHandler:
                         'phone': lead[3],
                         'source': lead[4],
                         'status': lead[5],
-                        'created_at': lead[6]
+                        'location': lead[6],
+                        'industry': lead[7],
+                        'company_size': lead[8],
+                        'created_at': lead[9]
                     })
                 else:
                     # From Lead object
@@ -60,6 +64,9 @@ class CSVHandler:
                     phone=row.get('phone', ''),
                     source=row.get('source', 'import'),
                     status=row.get('status', 'new'),
+                    location=row.get('location'),
+                    industry=row.get('industry'),
+                    company_size=row.get('company_size'),
                     created_at=row.get('created_at')
                 )
                 leads.append(lead)
