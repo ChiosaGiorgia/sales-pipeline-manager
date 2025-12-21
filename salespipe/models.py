@@ -61,3 +61,28 @@ class Opportunity:
 
     def __repr__(self):
         return f"Opportunity({self.opp_id}, {self.title}, ${self.value}, {self.stage})"
+
+    class Order:
+        """Represents a closed deal (won or lost)"""
+
+        def __init__(self, order_id, opp_id, status, close_date, notes=None, created_at=None):
+            self.order_id = order_id
+            self.opp_id = opp_id
+            self.status = status  # 'won' or 'lost'
+            self.close_date = close_date
+            self.notes = notes
+            self.created_at = created_at or datetime.now().isoformat()
+
+        def to_dict(self):
+            """Convert order to dictionary"""
+            return {
+                'order_id': self.order_id,
+                'opp_id': self.opp_id,
+                'status': self.status,
+                'close_date': self.close_date,
+                'notes': self.notes,
+                'created_at': self.created_at
+            }
+
+        def __repr__(self):
+            return f"Order({self.order_id}, {self.status}, {self.close_date})"
