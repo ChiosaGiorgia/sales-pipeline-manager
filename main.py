@@ -28,6 +28,14 @@ def main():
         cli.import_leads(args)
     elif args.command == 'analytics':
         cli.show_analytics(args)
+    elif args.command == 'company':
+        cli.show_company(args)
+    elif args.command == 'add-opportunity':
+        cli.add_opportunity_cmd(args)
+    elif args.command == 'add-quote':
+        cli.add_quote_cmd(args)
+    elif args.command == 'add-order':
+        cli.add_order_cmd(args)
     else:
         print(f"Unknown command: {args.command}")
         parser.print_help()
