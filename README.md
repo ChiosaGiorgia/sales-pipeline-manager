@@ -1084,6 +1084,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Python Standard Library Documentation: https://docs.python.org/3/library/
 
 ## Academic Context
+--
 
 This project was developed as part of the Lab of Software Development course requirements at Ca' Foscari University of Venice. It demonstrates practical application of:
 - Software development methodologies
