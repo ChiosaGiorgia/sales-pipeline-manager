@@ -1096,4 +1096,4 @@ This project was developed as part of the Lab of Software Development course req
 
 **Course**: Lab of Software Development  
 **Institution**: Ca' Foscari University of Venice  
-**Academic Year**: 2024-2025
+**Academic Year**: 2024-202
