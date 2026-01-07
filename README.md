@@ -1094,6 +1094,6 @@ This project was developed as part of the Lab of Software Development course req
 - Automated testing practices
 - Professional documentation standards
 
-**Course**: Lab of Software Development  
+**Course**: Lab of Software Project Development  
 **Institution**: Ca' Foscari University of Venice  
 **Academic Year**: 2024-2025
