@@ -79,17 +79,6 @@ This creates a demonstration dataset with:
 
 ## Why This Project?
 
-### Academic Context
-
-This project was developed as the final assignment for the **Lab of Software Development** course at Ca' Foscari University of Venice (Academic Year 2024-2025). The assignment required building a complete software application that demonstrates:
-
-- Professional software development practices
-- Version control with Git and GitHub (branches, issues, pull requests)
-- Collaborative development workflow
-- Database design and implementation
-- Command-line interface design
-- Automated testing
-- Professional documentation
 
 ### Real-World Problem
 
@@ -1096,4 +1085,4 @@ This project was developed as part of the Lab of Software Development course req
 
 **Course**: Lab of Software Project Development  
 **Institution**: Ca' Foscari University of Venice  
-**Academic Year**: 2024-2025
+**Academic Year**: 2025-2026
