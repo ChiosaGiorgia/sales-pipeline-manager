@@ -4,7 +4,7 @@ A command-line sales pipeline management system for P.I.P.E. Industrial Systems,
 
 ## Project Overview
 
-**SalesPipe** is a Python based CRM system built for P.I.P.E. Industrial Systems, a B2B company specializing in industrial machinery and automation solutions across Europe.
+**SalesPipe** is a Python-based CRM system built for P.I.P.E. Industrial Systems, a B2B company specializing in industrial machinery and automation solutions across Europe.
 
 ### Business Context
 
@@ -12,7 +12,7 @@ P.I.P.E. operates in four key markets:
 - Germany (main market)
 - Italy (strategic expansion)
 - France (growing presence)
-- Benelux (Belgium, Netherlands, Luxembourg  emerging market)
+- Benelux (Belgium, Netherlands, Luxembourg - emerging market)
 
 ### Target Industries
 
@@ -79,6 +79,18 @@ This creates a demonstration dataset with:
 
 ## Why This Project?
 
+### Academic Context
+
+This project was developed as the final assignment for the **Lab of Software Development** course at Ca' Foscari University of Venice (Academic Year 2024-2025). The assignment required building a complete software application that demonstrates:
+
+- Professional software development practices
+- Version control with Git and GitHub (branches, issues, pull requests)
+- Collaborative development workflow
+- Database design and implementation
+- Command-line interface design
+- Automated testing
+- Professional documentation
+
 ### Real-World Problem
 
 The project addresses a genuine business challenge faced by **P.I.P.E. Industrial Systems**, a B2B machinery company. Sales teams needed a tool to:
@@ -105,7 +117,7 @@ Through this project, we gained hands-on experience with:
 
 ## Quick Start Tutorial
 
-This 5 minute tutorial will walk you through the complete sales cycle using real commands you can copy and paste.
+This 5-minute tutorial will walk you through the complete sales cycle using real commands you can copy and paste.
 
 ### Step 1: Set Up the System
 
@@ -1073,6 +1085,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Academic Context
 
+
 This project was developed as part of the Lab of Software Development course requirements at Ca' Foscari University of Venice. It demonstrates practical application of:
 - Software development methodologies
 - Version control with Git and GitHub
@@ -1081,6 +1094,6 @@ This project was developed as part of the Lab of Software Development course req
 - Automated testing practices
 - Professional documentation standards
 
-**Course**: Lab of Software Development  
+**Course**: Lab of Software Project Development  
 **Institution**: Ca' Foscari University of Venice  
-**Academic Year**: 2025-2026
+**Academic Year**: 2024-2025
