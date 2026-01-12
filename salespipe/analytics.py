@@ -169,7 +169,7 @@ class Analytics:
 
     def get_performance_by_location(self):
         """
-        Calculate performance metrics by location
+        Calculate performance metrics by geography location
         """
         self.db.connect()
 

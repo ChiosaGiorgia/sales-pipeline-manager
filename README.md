@@ -1063,8 +1063,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Development Team
 
 - **Giorgia Chiosa** - Project Lead & Core Development
-- **Marta** - Data Management & Documentation
-- **Nicola** - Business Context & Quality Assurance
+- **Marta** - Data Management & Business Context
+- **Nicola** - Documentation & Analytics
 
 ## References
 
@@ -1072,17 +1072,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - GitHub Repository: https://github.com/ChiosaGiorgia/sales-pipeline-manager
 - Python Standard Library Documentation: https://docs.python.org/3/library/
 
-## Academic Context
-
-
-This project was developed as part of the Lab of Software Development course requirements at Ca' Foscari University of Venice. It demonstrates practical application of:
-- Software development methodologies
-- Version control with Git and GitHub
-- Database design and normalization
-- Command-line interface design
-- Automated testing practices
-- Professional documentation standards
-
-**Course**: Lab of Software Project Development  
-**Institution**: Ca' Foscari University of Venice  
-**Academic Year**: 2025-2026
