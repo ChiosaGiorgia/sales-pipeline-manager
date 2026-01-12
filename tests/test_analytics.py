@@ -12,7 +12,7 @@ class TestAnalytics(unittest.TestCase):
     """Test Analytics class"""
 
     def setUp(self):
-        """Set up test database with sample data"""
+        """Setting up test database with sample data generated"""
         self.test_db = "test_analytics.db"
 
         # Remove test db if exists

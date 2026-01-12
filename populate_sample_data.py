@@ -12,7 +12,7 @@ def populate_database():
 
     print("Populating database with P.I.P.E. sample data...\n")
 
-    # ===== LEADS =====
+    # LEADS
     print("Adding leads...")
 
     leads_data = [
@@ -41,7 +41,7 @@ def populate_database():
         lead_ids.append(lead_id)
         print(f"  + Lead {lead_id}: {name}")
 
-    # ===== OPPORTUNITIES =====
+    # OPPORTUNITIES
     print("\nAdding opportunities...")
 
     opportunities_data = [
@@ -59,7 +59,7 @@ def populate_database():
         opp_ids.append(opp_id)
         print(f"  + Opportunity {opp_id}: {title} (EUR {value:,})")
 
-    # ===== QUOTES =====
+    # QUOTES
     print("\nAdding quotes...")
 
     quotes_data = [
@@ -75,7 +75,7 @@ def populate_database():
         quote_ids.append(quote_id)
         print(f"  + Quote {quote_id}: {quote_num} (EUR {amount:,})")
 
-    # ===== ORDERS =====
+    # ORDERS
     print("\nAdding orders...")
 
     orders_data = [

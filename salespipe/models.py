@@ -16,13 +16,13 @@ class Lead:
         self.phone = phone
         self.source = source
         self.status = status  # new, contacted, qualified, disqualified
-        self.location = location  # P.I.P.E. markets: Germany, Italy, France, Benelux
+        self.location = location  # Operating markets: Germany, Italy, France, Benelux
         self.industry = industry  # automotive, industrial_components, food_beverage, logistics
         self.company_size = company_size  # small, medium, large
         self.created_at = created_at or datetime.now().isoformat()
 
     def to_dict(self):
-        """Convert lead to dictionary"""
+        """Now converting lead to dictionary"""
         return {
             'lead_id': self.lead_id,
             'name': self.name,
@@ -41,7 +41,7 @@ class Lead:
 
 
 class Opportunity:
-    """Represents a sales opportunity (qualified interest with estimated value)"""
+    """to represent sales opportunities (qualified interest with estimated value)"""
 
     def __init__(self, opp_id, lead_id, title, estimated_value, stage="initial_inquiry",
                  probability=0, expected_close=None, created_at=None):
@@ -49,7 +49,7 @@ class Opportunity:
         self.lead_id = lead_id
         self.title = title
         self.estimated_value = estimated_value  # Estimated commercial value (not final)
-        # P.I.P.E. stages: initial_inquiry, qualification, proposal_development,
+        # selling stages: initial_inquiry, qualification, proposal_development,
         # negotiation, order_confirmation, delivery
         self.stage = stage
         self.probability = probability  # 0-100%
@@ -118,7 +118,7 @@ class Order:
         self.created_at = created_at or datetime.now().isoformat()
 
     def to_dict(self):
-        """Convert order to dictionary"""
+        """converting now order to dictionary"""
         return {
             'order_id': self.order_id,
             'quote_id': self.quote_id,
